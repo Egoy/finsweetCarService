@@ -1,0 +1,109 @@
+@mixin heading1 {
+    font-size: 64px;
+    letter-spacing: -3%;
+    font-weight: 900;
+    line-height: 84px;
+}
+@mixin heading2 {
+    font-size: 58px;
+    letter-spacing: -3%;
+    font-weight: 800;
+    line-height: 76px;
+}
+@mixin heading3 {
+    font-size: 48px;
+    letter-spacing: -3%;
+    font-weight: 700;
+    line-height: 67.2px;
+}
+@mixin heading4 {
+    font-size: 40px;
+    letter-spacing: -3%;
+    font-weight: 700;
+    line-height: 56px;
+}
+@mixin heading5 {
+    font-size: 32px;
+    letter-spacing: -3%;
+    font-weight: 700;
+    line-height: 48px;
+}
+@mixin heading6 {
+    font-size: 20px;
+    letter-spacing: -3%;
+    font-weight: 600;
+    line-height: 30px;
+}
+@mixin title1 {
+    font-size: 32px;
+    letter-spacing: -3%;
+    font-weight: 700;
+    line-height: 48px;
+}
+@mixin title2 {
+    font-size: 24px;
+    letter-spacing: -3%;
+    font-weight: 600;
+    line-height: 36px;
+}
+@mixin pbody1 {
+    font-size: 18px;
+    letter-spacing: -3%;
+    font-weight: 600;
+    line-height: 31.5px;
+}
+@mixin pbody2 {
+    font-size: 16px;
+    letter-spacing: -3%;
+    font-weight: 600;
+    line-height: 28px;
+}
+@mixin captions {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+$black: #1E1B1B;
+$primary: #FF6433;
+$secondary: #661CE7;
+$mint: #00D289;
+$grey: #E2E6E9;
+$lightgrey: #F2F2F2;
+
+
+@mixin for-phone-only {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}

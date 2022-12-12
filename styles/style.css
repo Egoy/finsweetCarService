@@ -6,4 +6,67 @@
 
 body {
   font-family: "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  height: 90px;
+}
+
+.nav {
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: -3%;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1E1B1B;
+}
+.nav ul li:nth-child(6) {
+  width: 1px;
+  background-color: #E2E6E9;
+  display: inline-block;
+  height: 42px;
+}
+.nav .cta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  cursor: pointer;
+}
+.nav .cta__text {
+  margin-left: 14px;
+  text-align: center;
+}
+.nav .cta__text span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #1E1B1B;
+}
+.nav .cta__text span:nth-child(2) {
+  font-size: 16px;
+  letter-spacing: -3%;
+  font-weight: 600;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */

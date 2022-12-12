@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    height: 90px;
+}
+.nav {
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        a {
+            text-decoration: none;
+            @include pbody2;
+            color: $black;
+        }
+        li:nth-child(6) {
+            width: 1px;
+            background-color: $grey;
+            display: inline-block;
+            height: 42px;
+        }
+    }
+    .cta {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        cursor: pointer;
+        &__text {
+            margin-left: 14px;
+            text-align: center;
+            span {
+                display: block;
+                @include captions;
+                color: $black;
+                &:nth-child(2) {
+                    @include pbody2;
+                }
+            }
+        }
+    }
+}
