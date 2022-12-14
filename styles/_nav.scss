@@ -7,21 +7,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
-
 }
 .nav {
     &__menu {
-        position: absolute;
+        position: fixed;
         right: -375px;
         background-color: $grey;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         transition: .5s ease;
         top: 0;
+        bottom: 0;
         height: 100vh;
         padding: 32px;
+        gap: 100px;
         &.active {
             top: 0;
             right: 0px;
@@ -51,7 +51,7 @@ header {
             text-decoration: none;
             color: $black;
             text-transform: uppercase;
-            @include heading6;
+            @include heading5;
             &:hover{
                 color: $primary;
             }
@@ -89,6 +89,8 @@ header {
     &__button {
         cursor: pointer;
         z-index: 3;
+        position: fixed;
+        right: 32px;
         span {
             display: block;
             height: 3px;
@@ -123,18 +125,19 @@ header {
 .splashscreen {
     @include heading5;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: $lightgrey;
+    background-color: $grey;
     transition: 1s;
     &__header {
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-40%, -50%);
+        transform: scale;
     }
     &--items {
         position: relative;

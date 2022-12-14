@@ -2,7 +2,7 @@
     font-size: 64px;
     letter-spacing: -3%;
     font-weight: 900;
-    line-height: 84px;
+    line-height: 84px; 
 }
 @mixin heading2 {
     font-size: 58px;
@@ -103,7 +103,3 @@ $lightgrey: #F2F2F2;
     }
 }
 
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-}

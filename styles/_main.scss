@@ -1,0 +1,88 @@
+.btn-main {
+    background-color: $primary;
+    outline: none;
+    border: none;
+    color: $grey;
+    padding: 16px 40px;
+    @include pbody2;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.hero {
+    margin-top: 40px;
+    position: relative;
+    &__text {
+        h1 {
+            @include heading3;
+            margin-bottom: 24px;
+        }
+    }
+    &__subtext {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 50px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__image {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        .worker {
+            display: block;
+            width: 100%;
+        }
+        .servicePNG, .ratingPNG {
+            position: absolute;
+            width: 150px;
+            box-shadow: 0px 28px 118px 0px #6D6C731F;
+        }
+        .ratingPNG {
+            bottom: -20px;
+            right: -30px;
+        }
+        .servicePNG {
+            top: -20px;
+            left: -40px;
+        }
+    }
+}
+
+@include for-tablet-portrait-up {
+    .hero {
+        &__image {
+            .servicePNG,
+            .ratingPNG {
+                position: absolute;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@include for-desktop-up {
+    .hero {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        align-content: center;
+        &__image {
+            .servicePNG, .ratingPNG {
+                width: 250px;
+            }
+            .servicePNG {
+                top: 100px;
+                left: -60px;
+            }
+            .ratingPNG {
+                bottom: 80px;
+                width: 300px;
+            }  
+        }
+    }
+}
